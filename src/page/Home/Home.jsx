@@ -1,12 +1,33 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
+const listLink = [
+  {
+    LinkPage: 'otp',
+    NamePage: 'OTP'
+  }, 
+  {
+    LinkPage: 'inputPhoneNumber',
+    NamePage: 'Input Phone Number'
+  }, 
+  {
+    LinkPage: 'multiStepForm',
+    NamePage: 'Multi Step Form'
+  },
+  {
+    LinkPage: 'SlideBanner',
+    NamePage: 'Slide Banner'
+  },
+];
+
 function Home() {
   return (
     <div>
-      <li><NavLink to='otp'>OTP</NavLink></li>
-      <li><NavLink to='inputPhoneNumber'>Input Phone Number</NavLink></li>
-      <li><NavLink to='multiStepForm'>Multi Step Form</NavLink></li>
+      {listLink.map((list) => {
+        return (
+          <li><NavLink to={list.LinkPage}>{list.NamePage}</NavLink></li>
+        );
+      })}
     </div>
   )
 }

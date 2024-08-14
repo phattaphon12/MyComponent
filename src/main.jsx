@@ -8,6 +8,7 @@ import Home from './page/Home/Home.jsx'
 import Otp from './page/OTP/useOtp.jsx';
 import PhoneNumberInput from './page/InputPhoneNumber/InputPhoneNumber.jsx';
 import MultiStepForm from './page/MultiStepForm/MultiStepForm.jsx';
+import SlideBanner from './page/SlideBanner/SlideBanner.jsx';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,9 @@ const router = createBrowserRouter([
       }, {
         path: 'multiStepForm',
         element: <MultiStepForm />
+      }, {
+        path: 'SlideBanner',
+        element: <SlideBanner />
       },
     ],
   },
