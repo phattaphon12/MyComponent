@@ -15,7 +15,7 @@ function PhoneNumberInput() {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Phone Number:
+        <div className="phone text-3xl font-bold">Phone Number : </div>
         <input
           type="tel"
           value={phoneNumber}

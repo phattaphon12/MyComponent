@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
-import './index.css'
+import '../src/index.css'
 
 import Home from './page/Home/Home.jsx'
 import Otp from './page/OTP/useOtp.jsx';
